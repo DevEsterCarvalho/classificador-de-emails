@@ -1,4 +1,3 @@
-# Usar Python 3.11 slim como base
 FROM python:3.11-slim
 
 WORKDIR /app
@@ -8,11 +7,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
  && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
-
-
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install torch==2.8.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+RUN pip install transformers==4.30.0 flask==3.1.2 requests gunicorn
 
 COPY src/ ./src
 
