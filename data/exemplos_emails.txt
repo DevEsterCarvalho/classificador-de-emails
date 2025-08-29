@@ -1,0 +1,28 @@
+exemplo de e-mails para serem usados a fim de testar a aplicação, todas as informações são fictícias.
+
+--- Exemplo 1: Produtivo, possui sentimento positivo ou neutro e palavra-chave: solicitação ---
+
+Olá equipe,
+Gostaria de enviar a solicitação de pauta para a reunião marcada amanhã às 10h e confirmar minha participação.
+
+
+--- Exemplo 2: Improdutivo, por Ia pois tem sentimento negativo ---
+
+Boa tarde,
+Estou insatisfeito com o atendimento que recebi. Não houve retorno do suporte solicitado.
+Aguardo providências.
+
+--- Exemplo 3: Produtivo, usando palavra-chave: relatório ---
+
+Bom dia,
+Encaminho o relatório financeiro referente ao mês de agosto.
+Peço que validem até sexta-feira.
+Obrigado.
+
+
+--- Exemplo 4: Improdutivo, usando palavra-chave: feliz natal e ano novo ---
+
+Prezados,
+Desejamos a todos um Feliz Natal e um ótimo Ano Novo.
+Atenciosamente,
+Equipe de RH
