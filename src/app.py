@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 classifier = pipeline(
     "text-classification",
-    model="neuralmind/bert-base-portuguese-cased"
+    model="pysentimiento/bert-base-portuguese-sentiment"
 )
 # função de classificação por palavras-chave + IA
 def classificar_email(texto):
