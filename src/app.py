@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 classifier = pipeline(
     "text-classification",
-    model="lipaoMai/bert-sentiment-model-portuguese"
+    model="pysentimiento/bert-base-portuguese-sentiment"
 )
 # função de classificação por palavras-chave + IA
 def classificar_email(texto):
@@ -23,10 +23,10 @@ def classificar_email(texto):
     
     resultado = classifier(texto)[0]
     label = resultado['label'].lower()
-    # label pode ser 'positive', 'negative' ou 'neutral'
-    if label == "positive":
+    # label pode ser 'POS', 'NEG' ou 'NEU'
+    if label in ["pos", "positive"]:
         return "Produtivo"
-    elif label == "negative":
+    elif label in ["neg", "negative"]:
         return "Improdutivo"
     else:  # neutral
         return "Improdutivo"
