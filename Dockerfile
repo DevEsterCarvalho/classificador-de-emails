@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
-RUN pip install torch==2.8.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
+RUN pip install torch==2.8.0
 RUN pip install transformers==4.30.0 flask==3.1.2 requests gunicorn
 
 COPY src/ ./src
