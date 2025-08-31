@@ -1,0 +1,103 @@
+:root {
+	/* Paleta de cores harmoniosa */
+	--marrom: #896c6c;
+	--rosa-claro: #e5beb5;
+	--bege: #eee6ca;
+	--verde-claro: #f5fae1;
+	--rosa-escuro: #d49a8f;
+	/*fonte do projeto*/
+	--fonte-principal: "Inter", sans-serif;
+}
+
+* {
+	font-family: var(--fonte-principal);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--verde-claro);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+h1 {
+	color: var(--marrom);
+	font-weight: 700;
+}
+
+.formulario {
+	background-color: var(--bege);
+	padding: 20px;
+	border-radius: 5px;
+	width: 40%;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.titulo-corpo-email {
+	font-weight: 500;
+	font-size: 1.5em;
+	align-self: flex-start;
+	margin-left: 60px;
+	color: var(--marrom);
+}
+
+.textarea {
+	width: 80%;
+	max-width: 100%;
+	height: 200px;
+	max-height: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid var(--rosa-claro);
+	background-color: #fff;
+	color: #896c6c;
+	font-size: 1em;
+	resize: vertical;
+}
+
+button {
+	padding: 10px 20px;
+	height: 50px;
+	font-weight: 500;
+	font-size: 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	background-color: var(--rosa-claro);
+	color: var(--marrom);
+}
+
+button:hover {
+	background-color: var(--rosa-escuro);
+}
+
+/*Estilo da mensagem pós comparação no python*/
+
+.caixa-resposta {
+	background-color: var(--rosa-claro);
+	color: var(--marrom);
+	border-radius: 5px;
+	padding: 15px;
+	width: 40%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.categoria,
+.resposta-sugerida,
+.resposta {
+	margin: 0;
+	text-align: center;
+}

@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+
+.vscode/
+.idea/
+*.swp
+
+
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
+*.egg-info/
+dist/
+build/

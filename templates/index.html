@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Classificador de E-mails</title>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/style.css') }}"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<h1>Classificador de E-mails</h1>
+		<form class="formulario" action="/" method="POST">
+			<label class="titulo-corpo-email" for="email"
+				>Digite o corpo do e-mail:</label
+			><br /><br />
+			<textarea
+				class="textarea"
+				name="email"
+				id="email"
+				rows="10"
+				cols="50"
+				{{
+				email
+				}}
+			></textarea
+			><br /><br />
+			<button type="submit">Classificar tipo do e-mail</button>
+		</form>
+		<!--verifica se a variável category existe no template e se não está vazia ou nula-->
+		{% if category is defined and category %}
+		<div class="caixa-resposta">
+			<h2 class="categoria">Categoria: {{ category }}</h2>
+			<h3 class="resposta-sugerida">Resposta sugerida:</h3>
+			<p class="resposta">{{ response }}</p>
+		</div>
+		{% endif %}
+	</body>
+</html>
