@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 classifier = pipeline(
     "text-classification",
-    model="pysentimiento/robertuito-base-uncased",
+    model="tadrianonet/distilbert-text-classification",
     device=-1
 )
 # função de classificação por palavras-chave + IA
