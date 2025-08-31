@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 classifier = pipeline(
     "text-classification",
-    model="lipaoMai/BERT-sentiment-model-portuguese",
+    model="pysentimiento/robertuito-base-uncased",
     device=-1
 )
 # função de classificação por palavras-chave + IA
@@ -56,4 +56,4 @@ def index():
 if __name__ == "__main__":
     import os
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=port)
