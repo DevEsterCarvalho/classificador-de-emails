@@ -1,4 +1,6 @@
 Flask==2.3.3
 transformers==4.55.4
-torch==2.7.1
 gunicorn==21.2.0
+PyPDF2
+Werkzeug
+requests

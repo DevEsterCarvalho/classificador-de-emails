@@ -9,8 +9,9 @@ Gostaria de enviar a solicitação de pauta para a reunião marcada amanhã às 
 --- Exemplo 2: Improdutivo, por Ia pois tem sentimento negativo ---
 
 Boa tarde,
-Estou insatisfeito com o atendimento que recebi. Não houve retorno do suporte solicitado.
-Aguardo providências.
+Estou extremamente insatisfeito com o atendimento que recebi. Nenhuma das minhas solicitações foi atendida, e não recebi retorno algum do suporte.
+Essa situação é inaceitável e precisa ser resolvida imediatamente.
+
 
 --- Exemplo 3: Produtivo, usando palavra-chave: relatório ---
 

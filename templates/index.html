@@ -26,11 +26,16 @@
 				id="email"
 				rows="10"
 				cols="50"
-				{{
-				email
-				}}
-			></textarea
+				placeholder="Digite aqui o corpo do e-mail..."
+			>
+{{ email }}</textarea
 			><br /><br />
+
+			<label for="file" class="label-file"
+				>Ou envie um arquivo (.txt ou .pdf):</label
+			><br /><br />
+			<input type="file" name="file" id="file" accept=".txt,.pdf" /><br /><br />
+
 			<button type="submit">Classificar tipo do e-mail</button>
 		</form>
 		<!--verifica se a variável category existe no template e se não está vazia ou nula-->
